@@ -33,3 +33,26 @@ step-4 : Hypermedia as the engine of application state (HATEOAS)
 
 
 ------------------------------------------------------------------------
+
+> node -v
+> npm -v
+
+on project directory
+
+> npm i
+> npm start
+
+---------------------------------------------------------
+
+How to implement REST API in java language ?
+
+  => JAX-RS spec
+
+  Frameworks:
+
+        -> Apache CXF
+        -> Glassfish Jersey
+        -> JBOSS  RestEasy
+        -> Spring MVC
+
+------------------------------------------------------

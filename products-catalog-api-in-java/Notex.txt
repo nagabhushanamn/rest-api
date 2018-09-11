@@ -1,0 +1,93 @@
+
+
+
+
+products-catalog api
+------------------------
+
+
+back-end appln
+---------------
+
+step-1 : Model/Entity:          ==> business data
+step-2 : data/repository layer  ==> persisting/data-accessing logic
+step-3 : service layer          ==> processing logic on data
+
+step-4 : web-layer              ==> request & response logic  ( RESTful services )
+ 
+----------------------------------------------------------------------------
+
+ REST-api => Uniform interface
+ ------------------------------
+
+ step-1 : Resource identification in requests
+
+        e.g  product
+             review
+             ...
+        URI
+        ----
+        
+        /v1/api/products?limit=[size]&cat=[cat-type]
+        /v1/api/products/{id}
+        /v1/api/products/{id}/reviews     
+        /v1/api/products/{id}/reviews/{id}
+
+step-2 : Resource manipulation through representations
+
+        representations => html,xml,json
+
+step-3 : Self-descriptive messages
+
+step-4 : Hypermedia as the engine of application state (HATEOAS)
+
+----------------------------------------------------------------------------
+
+if your are java-dev, how to implement this REST-API
+
+ using any JAX-RS spec based frameworks
+ 
+        -> Apache CXF
+        -> Glassfish Jersey
+        -> JBOSS  RestEasy
+        or
+        -> Spring MVC
+
+----------------------------------------------------------------------------
+
+
+data-format standards
+
+
+  - XML
+  - JSON
+  
+------------------------------------------------------------------------------
+
+XML
+
+	<person>
+		<name>Nag</name>
+		<address>
+			<city>chennai</city>
+		</address>
+	</person>
+
+------------------------------------------------------------------------------
+
+JSON ==> ( JavaScript Object Notation )  
+
+{
+	"name":"Nag",
+	"age":34,
+	"address":{
+		"street":"",
+		city:""
+	},
+	"languages":["telugu","tamil","kannada","malayalam","arabic","english"]
+};
+
+
+
+
+	
