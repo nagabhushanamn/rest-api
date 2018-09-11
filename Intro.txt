@@ -1,0 +1,35 @@
+
+
+
+------------------------------------------------------------------------
+
+
+ REST-api => Uniform interface
+ ------------------------------
+
+ step-1 : Resource identification in requests
+
+        e.g  product
+             review
+             ...
+        URI
+        ----
+        
+        /v1/api/products?limit=[size]&cat=[cat-type]
+        /v1/api/products/{id}
+        /v1/api/products/{id}/reviews     
+        /v1/api/products/{id}/reviews/{id}
+
+step-2 : Resource manipulation through representations
+
+        representations => html,xml,json,pdf,xls,csv,..
+
+step-3 : Self-descriptive messages
+
+        request ==> Content-Type, Accpet,...
+        response ==> Content-Type,.. 
+
+step-4 : Hypermedia as the engine of application state (HATEOAS)
+
+
+------------------------------------------------------------------------

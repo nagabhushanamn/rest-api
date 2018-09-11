@@ -1,0 +1,26 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysql_db": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "products_catalog",
+    "password": "root1234",
+    "name": "mysql_db",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "mongo_db": {
+    "host": "",
+    "port": 0,
+    "url": "mongodb://user1:user123@ds113402.mlab.com:13402/products-catalog",
+    "database": "products_catalog",
+    "password": "",
+    "name": "mongo_db",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
