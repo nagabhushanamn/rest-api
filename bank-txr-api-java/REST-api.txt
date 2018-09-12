@@ -1,0 +1,21 @@
+
+
+
+
+step-1 : Resource identification in requests
+
+
+/v1/api/accounts
+/v1/api/accounts/{id}
+/v1/api/accounts/{id}/txns
+/v1/api/txns
+/v1/api/txns/{id}
+
+/v1/api/txr
+
+step-2 : Resource manipulation through representations	
+
+XML,JSON
+
+
+		

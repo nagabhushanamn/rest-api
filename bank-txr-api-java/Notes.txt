@@ -1,0 +1,183 @@
+
+
+what is object ?
+
+
+	- state
+	- behavior
+	- identity
+	
+	obj ==> sbi
+
+
+
+--------------------------------------------------
+OO concepts
+--------------------------------------------------
+
+
+	- Interface/Abstraction
+	
+	- Implementation/Encapsulation
+	
+	- Inheritance
+	
+	- Polymorphism
+
+-------------------------------------------------------------
+
+bank appln
+-------------'
+
+	use-case: txr(amount,fromAccNum,toAccNum)
+	
+	
+    As OO analysis 
+    --------------------
+    
+    data-model :
+    
+    	- Account
+    	- Txn
+    	
+    repository/data/dao-layer
+    
+       - AccountRepository
+       - TxnRepository
+    
+    service/business-layer
+    
+       - TxrService
+       
+    web-layer
+    
+       - TxrController
+       - TxnCOntroller
+     
+     
+     
+     
+--------------------------------------------------
+   OO design principles
+ --------------------------------------------------
+     
+     
+     S.O.L.I.D. STANDS FOR:
+     
+		S — Single responsibility principle
+		O — Open for extension & closed for modification principle
+		L — Liskov substitution principle
+		I — Interface segregation principle
+		D — Dependency Inversion principle
+        
+
+--------------------------------------------------
+   OO design patterns
+ --------------------------------------------------    
+ 
+ 
+    -> creational
+    -> structural
+    -> behvaioral
+    
+    	
+	
+	
+	
+---------------------------------------------------
+
+
+
+Functional Programming in Java
+---------------------------------
+
+
+	Predicate<Txn> predicate = new Predicate<Txn>() {
+			@Override
+			public boolean test(Txn t) {
+				return t.getAmount() == amount;
+			}
+	};
+	|
+	|
+	|
+	V
+	Predicate<Txn> predicate=public boolean test(Txn t) {
+								return t.getAmount() == amount;
+							}
+	|
+	|
+	|
+	V
+	Predicate<Txn> predicate=boolean test(Txn t) {
+								return t.getAmount() == amount;
+							}
+	|
+	|
+	|
+	V
+	Predicate<Txn> predicate=test(Txn t) {
+								return t.getAmount() == amount;
+							}
+
+	|
+	|
+	|
+	V
+	Predicate<Txn> predicate=(Txn t) {
+								return t.getAmount() == amount;
+							}
+
+	|
+	|
+	|
+	V
+	Predicate<Txn> predicate=(t) {
+								return t.getAmount() == amount;
+							}
+	
+	|
+	|
+	|
+	V
+	Predicate<Txn> predicate=(t) -> t.getAmount() == amount;  // function in java  ( Lambda Expression )
+	// or
+	Predicate<Txn> predicate=t -> t.getAmount() == amount;  // function in java  ( Lambda Expression )
+							
+
+--------------------------------------------------------------	
+		
+	
+	why FP?
+	
+
+	Characteristics of functional programming
+	
+	
+		clean & concise code
+		Immutable state
+		First class citizens are functions
+		Lazy evaluation
+		Higher order function
+		No side effects
+		Function composition
+			
+
+--------------------------------------------------------------	
+
+
+		
+		
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
